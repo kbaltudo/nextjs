@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_banner_inner_banners",
+  "info": {
+    "displayName": "InnerBanner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "Title": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

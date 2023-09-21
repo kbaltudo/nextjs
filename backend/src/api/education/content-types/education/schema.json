@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "educations",
+  "info": {
+    "singularName": "education",
+    "pluralName": "educations",
+    "displayName": "Education",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.inner-banner"
+    },
+    "Infographics": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.assets"
+    },
+    "RichText": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content.rich-text"
+    },
+    "BlogListing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.blog-listing"
+    },
+    "SocialLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.secondary-navigation"
+    },
+    "PageTemplate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-template.page-template"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_composits_assets",
+  "info": {
+    "displayName": "Assets",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Asset": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::asset.asset"
+    },
+    "LinkText": {
+      "type": "string",
+      "required": false
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "brand_listings",
+  "info": {
+    "singularName": "brand-listing",
+    "pluralName": "brand-listings",
+    "displayName": "Brand Listing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

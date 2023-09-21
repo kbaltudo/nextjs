@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_structure_footers",
+  "info": {
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image-component"
+    },
+    "SocialLinks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.secondary-navigation"
+    },
+    "Description1": {
+      "type": "richtext"
+    },
+    "Description2": {
+      "type": "richtext"
+    }
+  }
+}

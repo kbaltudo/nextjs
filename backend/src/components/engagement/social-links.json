@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_engagement_social_links",
+  "info": {
+    "displayName": "Social Links",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SocialLink": {
+      "displayName": "Social Link",
+      "type": "component",
+      "repeatable": false,
+      "component": "engagement.social-link"
+    },
+    "RoundedBox": {
+      "type": "boolean"
+    },
+    "Alignment": {
+      "type": "enumeration",
+      "enum": [
+        "Horizontal",
+        "Vertical"
+      ]
+    }
+  }
+}

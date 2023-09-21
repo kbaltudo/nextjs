@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_uses",
+  "info": {
+    "singularName": "contact-us",
+    "pluralName": "contact-uses",
+    "displayName": "Contact us",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "ContactUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.contact-us"
+    },
+    "PageTemplate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-template.page-template"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "ContactEmail": {
+      "type": "email",
+      "required": true
+    },
+    "ContactPhone": {
+      "type": "string",
+      "required": true,
+      "regex": "^\\(?([0-9]{3})\\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$"
+    }
+  }
+}

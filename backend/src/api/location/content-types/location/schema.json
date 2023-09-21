@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Locations",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LocationName": {
+      "type": "string"
+    },
+    "LocationCity": {
+      "type": "string"
+    },
+    "Address": {
+      "type": "text"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Lattitude": {
+      "type": "float"
+    },
+    "Longitude": {
+      "type": "float"
+    },
+    "Link": {
+      "type": "string"
+    }
+  }
+}

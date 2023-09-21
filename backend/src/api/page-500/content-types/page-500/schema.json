@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_500s",
+  "info": {
+    "singularName": "page-500",
+    "pluralName": "page-500s",
+    "displayName": "Page 500"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}

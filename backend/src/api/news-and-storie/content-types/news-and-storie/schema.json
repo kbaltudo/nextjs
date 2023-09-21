@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "news_and_stories",
+  "info": {
+    "singularName": "news-and-storie",
+    "pluralName": "news-and-stories",
+    "displayName": "News and Stories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "CategoryListing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "engagement.category-listing"
+    },
+    "PageTemplate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-template.page-template"
+    },
+    "BlogListing": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.blog-listing"
+    }
+  }
+}

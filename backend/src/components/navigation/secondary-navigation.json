@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_navigation_secondary_navigations",
+  "info": {
+    "displayName": "Link List",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "unique": true
+    },
+    "NavigationLinks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::navigation-link.navigation-link"
+    },
+    "Slug": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "classes": {
+      "type": "string"
+    }
+  }
+}

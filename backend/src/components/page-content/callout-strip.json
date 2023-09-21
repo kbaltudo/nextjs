@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_composits_callout_strips",
+  "info": {
+    "displayName": "Promo",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

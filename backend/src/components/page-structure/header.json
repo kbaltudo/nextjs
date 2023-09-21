@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_header_headers",
+  "info": {
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "PrimaryNavigation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "navigation.secondary-navigation"
+    },
+    "LanguageSelector": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.language-selector"
+    }
+  }
+}

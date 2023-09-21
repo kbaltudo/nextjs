@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_templates",
+  "info": {
+    "singularName": "page-template",
+    "pluralName": "page-templates",
+    "displayName": "Page Template",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-structure.header"
+    },
+    "Footer": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-structure.footer"
+    }
+  }
+}

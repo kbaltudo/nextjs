@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "partners_in_possibilities",
+  "info": {
+    "singularName": "partners-in-possibility",
+    "pluralName": "partners-in-possibilities",
+    "displayName": "Partners In Possibility",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.inner-banner"
+    },
+    "Webinar": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.webinar"
+    },
+    "PageTemplate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-template.page-template"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

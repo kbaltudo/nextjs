@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_header_language_selectors",
+  "info": {
+    "displayName": "Language Selector",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "default": "English",
+      "required": true
+    },
+    "Description": {
+      "type": "string"
+    }
+  }
+}

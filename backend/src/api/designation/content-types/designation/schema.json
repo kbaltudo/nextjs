@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "designations",
+  "info": {
+    "singularName": "designation",
+    "pluralName": "designations",
+    "displayName": "Designation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "versions": {
+      "versioned": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "string",
+      "default": "Associate"
+    },
+    "Slug": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Description": {
+      "pluginOptions": {
+        "versions": {
+          "versioned": true
+        }
+      },
+      "type": "text"
+    },
+    "Designation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "designation"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_engagement_category_listings",
+  "info": {
+    "displayName": "CategoryListing"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    }
+  }
+}

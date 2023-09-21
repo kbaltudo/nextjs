@@ -1,0 +1,85 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "About",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.inner-banner"
+    },
+    "TwoColumnCallout": {
+      "displayName": "Two Column Callout",
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content.two-column-callout"
+    },
+    "CoreValues": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.cards-block"
+    },
+    "FounderStory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content.block-group"
+    },
+    "OurStory": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content.block-group"
+    },
+    "Quote": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content.block-group"
+    },
+    "ContactDetails": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content.block-group"
+    },
+    "DefaultTemplate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-template.page-template"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "BackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "TeamMembers": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.teams"
+    },
+    "HomeBanner": {
+      "type": "component",
+      "repeatable": true,
+      "component": "media.banner"
+    }
+  }
+}

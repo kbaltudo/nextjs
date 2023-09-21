@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_engagement_tag_listings",
+  "info": {
+    "displayName": "TagListing"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}

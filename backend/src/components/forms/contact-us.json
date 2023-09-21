@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_forms_contact_uses",
+  "info": {
+    "displayName": "Contact Us",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "ContactUsForms": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::contact-us-form.contact-us-form"
+    },
+    "SubTitle": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

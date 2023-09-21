@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_composits_two_column_callouts",
+  "info": {
+    "displayName": "Two Column Tile",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title1": {
+      "type": "string",
+      "required": true
+    },
+    "Title2": {
+      "type": "string"
+    },
+    "BackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Description1": {
+      "type": "richtext"
+    },
+    "Description2": {
+      "type": "richtext"
+    }
+  }
+}

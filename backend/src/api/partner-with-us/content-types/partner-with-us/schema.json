@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "partner_with_uses",
+  "info": {
+    "singularName": "partner-with-us",
+    "pluralName": "partner-with-uses",
+    "displayName": "Partner With Us",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.inner-banner"
+    },
+    "Cards": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.cards-block"
+    },
+    "Image": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.image-component"
+    },
+    "Cards2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.cards-block"
+    },
+    "ContentTile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content.block-group"
+    },
+    "ContentTile2": {
+      "type": "component",
+      "repeatable": false,
+      "component": "page-content.block-group"
+    },
+    "ContactUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "forms.contact-us"
+    },
+    "PageTemplate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-template.page-template"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "careerss",
+  "info": {
+    "singularName": "careers",
+    "pluralName": "careerss",
+    "displayName": "Careers",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    },
+    "Banner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "media.inner-banner"
+    },
+    "Cards": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.cards-block"
+    },
+    "Cards1": {
+      "type": "component",
+      "repeatable": false,
+      "component": "composits.cards-block"
+    },
+    "Location": {
+      "type": "component",
+      "repeatable": false,
+      "component": "maps.location"
+    },
+    "PageTemplate": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-template.page-template"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

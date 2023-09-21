@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_composits_webinars",
+  "info": {
+    "displayName": "Webinar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "BackgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Webinars": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::webinar.webinar"
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.container {
+  max-width: 63vw;
+  margin-left: 5rem;
+}
+
+.mb3 {
+  margin-bottom: 21px;
+}
+
+.formlabel {
+  margin: 0px 14px;
+}
+
+.contactUs {
+
+  background-color: #F5F5F6;
+  margin-bottom: -1.5rem;
+  margin-top: -3rem;
+  padding-bottom: 3rem;
+  padding-top: 1rem;
+
+}
+
+.title {
+  color: #097481;
+}
+
+.number {
+  color: #097481;
+}
+
+.email {
+  color: #3cad49;
+}
+
+.vendor h5,
+.careers h5 {
+  color: #097481;
+  font-weight: bold;
+}
+
+.anchor a {
+  color: #3cad49;
+  text-decoration: none;
+}
+

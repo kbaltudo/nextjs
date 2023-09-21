@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_engagement_social_link",
+  "info": {
+    "displayName": "Social Link"
+  },
+  "options": {},
+  "attributes": {
+    "FacebookLink": {
+      "type": "string"
+    },
+    "InstagramLink": {
+      "type": "string"
+    },
+    "LinkedinLink": {
+      "type": "string"
+    },
+    "Youtube": {
+      "type": "string"
+    }
+  }
+}
+
+

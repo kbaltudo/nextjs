@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_page_content_rich_texts",
+  "info": {
+    "displayName": "Rich Text",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SubTitle": {
+      "type": "text"
+    },
+    "Description": {
+      "type": "richtext"
+    }
+  }
+}

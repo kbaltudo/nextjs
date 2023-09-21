@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_composits_cards_blocks",
+  "info": {
+    "displayName": "Cards Block",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Background_Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "cards": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::card.card"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "ButtonTitle": {
+      "type": "string"
+    },
+    "CardImageRounded": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

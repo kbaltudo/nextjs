@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "page_404s",
+  "info": {
+    "singularName": "page-404",
+    "pluralName": "page-404s",
+    "displayName": "Page 404"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}
